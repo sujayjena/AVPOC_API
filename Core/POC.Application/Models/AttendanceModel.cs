@@ -15,6 +15,8 @@ namespace POC.Application.Models
 
         [DefaultValue("")]
         public string? GateId { get; set; }
+
+        public int? VisitorId { get; set; }
     }
 
     public class Attendance_Request : BaseEntity

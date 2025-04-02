@@ -40,6 +40,7 @@ namespace POC.Persistence.Repositories
             DynamicParameters queryParameters = new DynamicParameters();
             queryParameters.Add("@EmployeeId", parameters.EmployeeId);
             queryParameters.Add("@GateId", parameters.GateId);
+            queryParameters.Add("@VisitorId", parameters.VisitorId);
             queryParameters.Add("@SearchText", parameters.SearchText.SanitizeValue());
             queryParameters.Add("@IsActive", parameters.IsActive);
             queryParameters.Add("@PageNo", parameters.PageNo);
