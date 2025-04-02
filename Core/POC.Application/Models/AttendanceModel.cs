@@ -11,6 +11,10 @@ namespace POC.Application.Models
 {
     public class Attendance_Search : BaseSearchEntity
     {
+        public int? EmployeeId { get; set; }
+
+        [DefaultValue("")]
+        public string? GateId { get; set; }
     }
 
     public class Attendance_Request : BaseEntity

@@ -38,6 +38,8 @@ namespace POC.Persistence.Repositories
         public async Task<IEnumerable<Attendance_Response>> GetAttendanceList(Attendance_Search parameters)
         {
             DynamicParameters queryParameters = new DynamicParameters();
+            queryParameters.Add("@EmployeeId", parameters.EmployeeId);
+            queryParameters.Add("@GateId", parameters.GateId);
             queryParameters.Add("@SearchText", parameters.SearchText.SanitizeValue());
             queryParameters.Add("@IsActive", parameters.IsActive);
             queryParameters.Add("@PageNo", parameters.PageNo);
