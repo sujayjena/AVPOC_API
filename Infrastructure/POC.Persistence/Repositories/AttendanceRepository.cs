@@ -31,6 +31,7 @@ namespace POC.Persistence.Repositories
             queryParameters.Add("@AttendanceStatus", parameters.AttendanceStatus);
             queryParameters.Add("@BatteryStatus", parameters.BatteryStatus);
             queryParameters.Add("@VisitorId", parameters.VisitorId);
+            queryParameters.Add("@Remarks", parameters.Remarks);
 
             return await SaveByStoredProcedure<int>("SaveAttendance", queryParameters);
         }

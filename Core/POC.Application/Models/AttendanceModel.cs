@@ -26,6 +26,7 @@ namespace POC.Application.Models
         public string? AttendanceStatus { get; set; }
         public string? BatteryStatus { get; set; }
         public int? VisitorId { get; set; }
+        public string? Remarks { get; set; }
     }
 
     public class Attendance_Response : BaseResponseEntity
@@ -38,5 +39,6 @@ namespace POC.Application.Models
         public string? BatteryStatus { get; set; }
         public int? VisitorId { get; set; }
         public string? VisitorName { get; set; }
+        public string? Remarks { get; set; }
     }
 }
